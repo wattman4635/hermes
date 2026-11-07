@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hermes — Personal Google Workspace Agent</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 3rem 1.25rem 5rem;
+    line-height: 1.65; color: #1a1a1a; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e6e6; background: #121212; }
+    a { color: #7cb3ff; }
+    .card { background: #1c1c1c; border-color: #2e2e2e; }
+    code { background: #242424; }
+  }
+  h1 { font-size: 1.9rem; margin-bottom: .25rem; letter-spacing: -.02em; }
+  .sub { color: #666; margin-top: 0; font-size: 1.05rem; }
+  h2 { font-size: 1.15rem; margin-top: 2.25rem; }
+  .card {
+    border: 1px solid #e2e2e2; border-radius: 10px;
+    padding: 1rem 1.25rem; margin: 1.5rem 0; background: #fafafa;
+  }
+  ul { padding-left: 1.25rem; }
+  li { margin: .35rem 0; }
+  code { background: #f1f1f1; padding: .1rem .35rem; border-radius: 4px; font-size: .9em; }
+  footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #e2e2e2; font-size: .9rem; color: #666; }
+</style>
+</head>
+<body>
+
+<h1>Hermes</h1>
+<p class="sub">A personal AI agent that operates a single Google Workspace account.</p>
+
+<div class="card">
+  <strong>Personal, single-user application.</strong><br>
+  Hermes is not a public product. It is a private automation tool operated by one
+  individual for their own Google account, and it is not offered to or usable by
+  the general public.
+</div>
+
+<h2>What it does</h2>
+<p>
+  Hermes is an AI assistant that runs locally on its operator's machine. When the
+  operator asks it to do something involving their own Google account, Hermes calls
+  the relevant Google API directly, with the operator's explicit authorization, to
+  carry out that request. It performs the same actions the operator could perform
+  manually in the Google interface — no more.
+</p>
+
+<h2>Google services it accesses, and why</h2>
+<ul>
+  <li><strong>Gmail</strong> — search and read messages, send and reply to email, and manage labels, so the operator can have the assistant triage and draft correspondence.</li>
+  <li><strong>Google Calendar</strong> — list, create, and delete events, so the assistant can schedule and review the operator's own calendar.</li>
+  <li><strong>Google Drive</strong> — search, upload, download, share, and trash files belonging to the operator, so the assistant can file and retrieve documents.</li>
+  <li><strong>Google Sheets</strong> — create, read, and write spreadsheet data requested by the operator.</li>
+  <li><strong>Google Docs</strong> — create, read, and append to documents requested by the operator.</li>
+  <li><strong>Google Contacts</strong> — read the operator's contact list, to resolve names to email addresses when sending mail.</li>
+</ul>
+
+<h2>How your data is handled</h2>
+<p>
+  Data accessed through these APIs stays on the operator's own machine. It is not
+  transmitted to any third party, not sold, and not used for advertising, profiling,
+  or training machine-learning models. Full details are in the
+  <a href="privacy.html">Privacy Policy</a>.
+</p>
+
+<h2>Access and revocation</h2>
+<p>
+  Authorization is granted through Google's standard OAuth 2.0 consent flow and can be
+  revoked at any time at
+  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
+  Revoking access immediately invalidates the stored credentials.
+</p>
+
+<footer>
+  <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+  Contact: <a href="mailto:hermes.cory.toth@gmail.com">hermes.cory.toth@gmail.com</a>
+</footer>
+
+</body>
+</html>

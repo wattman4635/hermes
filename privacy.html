@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Hermes</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 3rem 1.25rem 5rem;
+    line-height: 1.65; color: #1a1a1a; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e6e6; background: #121212; }
+    a { color: #7cb3ff; }
+    .card { background: #1c1c1c; border-color: #2e2e2e; }
+  }
+  h1 { font-size: 1.9rem; margin-bottom: .25rem; letter-spacing: -.02em; }
+  .sub { color: #666; margin-top: 0; font-size: .95rem; }
+  h2 { font-size: 1.12rem; margin-top: 2.25rem; }
+  .card {
+    border: 1px solid #e2e2e2; border-radius: 10px;
+    padding: 1rem 1.25rem; margin: 1.5rem 0; background: #fafafa;
+  }
+  ul { padding-left: 1.25rem; }
+  li { margin: .4rem 0; }
+  footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #e2e2e2; font-size: .9rem; color: #666; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="sub">Hermes — personal Google Workspace agent. Last updated: 7 November 2026.</p>
+
+<div class="card">
+  <strong>Limited Use disclosure.</strong><br>
+  Hermes's use and transfer of information received from Google APIs adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+  including the Limited Use requirements.
+</div>
+
+<h2>1. Scope of this policy</h2>
+<p>
+  Hermes is a private, single-user application operated by one individual for their own
+  Google account. It is not a commercial product, has no other users, and is not
+  distributed to the public. This policy explains what Google user data Hermes accesses,
+  how that data is used, where it is stored, and how it can be deleted.
+</p>
+
+<h2>2. What data is accessed</h2>
+<p>After the operator grants consent through Google's OAuth 2.0 flow, Hermes may access:</p>
+<ul>
+  <li><strong>Gmail</strong> — message contents, headers, labels, and attachments of the operator's own mailbox.</li>
+  <li><strong>Google Calendar</strong> — event titles, times, locations, descriptions, and attendees on the operator's own calendars.</li>
+  <li><strong>Google Drive</strong> — file names, metadata, and contents of files the operator owns or can access.</li>
+  <li><strong>Google Sheets</strong> — spreadsheet contents the operator requests be read or written.</li>
+  <li><strong>Google Docs</strong> — document contents the operator requests be read or appended to.</li>
+  <li><strong>Google Contacts</strong> — the operator's contact names and email addresses.</li>
+  <li><strong>Account identity</strong> — the operator's email address, used to identify the authorized account.</li>
+</ul>
+<p>
+  Hermes accesses only the operator's own data. It does not access the data of any other
+  Google user except where the operator explicitly instructs an action involving a
+  correspondent (for example, sending an email to a recipient).
+</p>
+
+<h2>3. How data is used</h2>
+<p>
+  Data is used solely to carry out actions the operator explicitly requests, such as
+  searching mail, drafting or sending a message, creating a calendar event, or reading a
+  document. Every Google API call is initiated by a direct instruction from the operator
+  in the course of using the assistant.
+</p>
+<p>Google user data is <strong>not</strong> used or transferred for:</p>
+<ul>
+  <li>advertising, marketing, or profiling;</li>
+  <li>determining creditworthiness or lending purposes;</li>
+  <li>sale to any third party;</li>
+  <li>training or improving generalized or foundation machine-learning models.</li>
+</ul>
+
+<h2>4. Storage and retention</h2>
+<p>
+  Hermes runs locally on hardware controlled by the operator. Data retrieved from Google
+  APIs is held in memory only for the duration of the task and is not persisted to any
+  remote server. The only long-lived credential stored is an OAuth refresh token, kept in
+  a local file readable solely by the operator's own operating-system account.
+</p>
+<p>
+  No Google user data is retained after a task completes, beyond the operator's own
+  mailbox and drive, which remain under the operator's control in their Google account.
+</p>
+
+<h2>5. Sharing and disclosure</h2>
+<p>
+  Google user data is not shared with, sold to, or disclosed to any third party. It is not
+  transmitted to the AI model provider as bulk data; only the specific text needed for a
+  requested task may be included in a prompt to the language model that powers the
+  assistant, and that processing is limited to producing the requested result.
+</p>
+<p>
+  Data may be disclosed only if required by applicable law, or with the operator's explicit
+  instruction.
+</p>
+
+<h2>6. Security</h2>
+<p>
+  Credentials are stored with file permissions restricted to the operator's user account.
+  All communication with Google APIs uses HTTPS. Access tokens are short-lived and
+  refreshed automatically; the refresh token can be invalidated at any time.
+</p>
+
+<h2>7. Deleting your data and revoking access</h2>
+<p>Access can be revoked, and all stored credentials invalidated, in either of two ways:</p>
+<ul>
+  <li>Visit <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, select Hermes, and choose <em>Remove access</em>.</li>
+  <li>Delete the local token file on the machine where Hermes runs.</li>
+</ul>
+<p>
+  Once access is revoked, Hermes can no longer read or act on the account, and the stored
+  refresh token stops working immediately. Because no Google user data is stored outside
+  the operator's own Google account, revoking access is sufficient to remove all retained
+  data.
+</p>
+
+<h2>8. Children</h2>
+<p>Hermes is not directed at children and is not used by anyone other than its single adult operator.</p>
+
+<h2>9. Changes to this policy</h2>
+<p>
+  Any change to this policy will be published on this page with an updated date. Because
+  Hermes has a single user, material changes will also be communicated to that operator
+  directly.
+</p>
+
+<h2>10. Contact</h2>
+<p>
+  Questions about this policy or about data handling can be sent to
+  <a href="mailto:hermes.cory.toth@gmail.com">hermes.cory.toth@gmail.com</a>.
+</p>
+
+<footer>
+  <a href="index.html">Home</a> &nbsp;·&nbsp;
+  Contact: <a href="mailto:hermes.cory.toth@gmail.com">hermes.cory.toth@gmail.com</a>
+</footer>
+
+</body>
+</html>
